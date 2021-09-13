@@ -12,12 +12,12 @@ def tdelta(time1, time2):
   # calculate difference
   tdelta = str(datetime.strptime(time2,'%H:%M') - datetime.strptime(time1,'%H:%M')).split(":")
 
-  if len(tdelta[0]) > 2:
-    hours = tdelta[0][-1:]
+  if len(tdelta[0]) > 1:
+    hours = tdelta[0][-1]
   else:
     hours = tdelta[0]
+
   minutes = tdelta[1]
-  # if (len(tdelta) > 3):
 
   return hours, minutes
 
