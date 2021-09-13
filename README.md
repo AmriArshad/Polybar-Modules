@@ -3,7 +3,7 @@ A simple script that checks the time until the next Islamic prayer by making use
 
 
 ### Setting up the module in [polybar](https://github.com/polybar/polybar):
-Copy athan.py into your scripts folder in polybar config.  
+Copy athan.py into your scripts folder.  
 This can be found at ~/.config/polybar/scripts/
 
 Inside athan.py, change the CITY, COUNTRY and METHOD variables to match your location and prayer time calculation method accordingly. More information regarding these variables can be found [here](https://aladhan.com/prayer-times-api). 
