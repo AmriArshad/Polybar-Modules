@@ -41,7 +41,7 @@ try:
           hours, minutes = tdelta(current, formatted_time)
           print("{} in {}:{}".format(time[0], hours, minutes))
           break
-      if current > timings['Isha']:
+      if current >= timings['Isha']:
         # edge case for time between isha and midnight
         fajr = timings['Fajr']
         hours, minutes = tdelta(current, fajr)
