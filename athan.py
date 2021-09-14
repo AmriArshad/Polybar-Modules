@@ -24,9 +24,9 @@ try:
     # HTTP CODE = OK
     if REQ.status_code == 200:
       timings = REQ.json()["results"]["datetime"][0]["times"]
-      
       # remove extra timings
       del timings['Imsak']
+      del timings['Sunrise']
       del timings['Sunset']
       del timings['Midnight']
       
