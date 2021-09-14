@@ -5,8 +5,7 @@ import requests
 from datetime import datetime
 
 CITY = "Auckland"
-COUNTRY = "NZ"
-METHOD = 3
+SCHOOL = 3
 
 def tdelta(time1, time2):
   # calculate difference
@@ -20,15 +19,15 @@ def tdelta(time1, time2):
 
   return hours, minutes
 
-REQ = requests.get("https://api.aladhan.com/v1/timingsByCity?city={}&country={}&method={}".format(CITY, COUNTRY, METHOD))
+REQ = requests.get("https://api.pray.zone/v2/times/today.json?city={}&school={}".format(CITY, SCHOOL))
 try:
     # HTTP CODE = OK
     if REQ.status_code == 200:
-      timings = REQ.json()["data"]["timings"]
+      timings = REQ.json()["results"]["datetime"][0]["times"]
       
       # remove extra timings
-      del timings['Sunset']
       del timings['Imsak']
+      del timings['Sunset']
       del timings['Midnight']
       
       current = datetime.now().time().strftime("%H:%M")
