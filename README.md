@@ -1,12 +1,12 @@
 # athan-module
-A simple script that checks the time until the next Islamic prayer by making use of the [AlAdhan API](https://aladhan.com/prayer-times-api).
+A simple script that checks the time until the next Islamic prayer by making use of the [Prayer Times API](https://prayertimes.date/api).
 
 
 ### Setting up the module in [polybar](https://github.com/polybar/polybar):
 Copy athan.py into your scripts folder.  
 This can be found at ~/.config/polybar/scripts/
 
-Inside athan.py, change the CITY, COUNTRY and METHOD variables to match your location and prayer time calculation method accordingly. More information regarding these variables can be found [here](https://aladhan.com/prayer-times-api). 
+Inside athan.py, change the CITY and SCHOOL variables to match your location and prayer time calculation method accordingly. More information regarding these variables can be found [here](https://prayertimes.date/api/docs/today). 
 
 Finally place this config in the modules section of your polybar config
 
