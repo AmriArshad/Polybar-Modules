@@ -1,0 +1,23 @@
+# ETH gas fees
+A simple script that checks the currect Ethereum gas fees using the [Etherchain API](https://etherchain.org/api/gasnow). Note that the fee shown is for "Rapid" and is in GWei.
+
+
+### Setting up the module in [polybar](https://github.com/polybar/polybar):
+Copy gas.py into your scripts folder.  
+This can be found at ~/.config/polybar/scripts/
+
+Place this config in the modules section of your polybar config and change formatting as desired.
+
+```
+[module/gas]
+type = custom/script
+interval = 5
+format = <label>
+format-prefix = " "
+format-prefix-foreground = #FF7133
+format-underline = #FF7133
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+exec = python -u ~/.config/polybar/scripts/gas.py
+tail = true
+```
