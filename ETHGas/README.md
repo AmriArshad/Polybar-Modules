@@ -1,5 +1,5 @@
 # ETH gas fees
-A simple script that checks the currect Ethereum gas fees using the [Etherchain API](https://etherchain.org/api/gasnow). Note that the fee shown is for "Rapid" and is in GWei. Clicking on the module will open etherchain the browser.
+A simple script that checks the current Ethereum gas fees using the [Etherchain API](https://etherchain.org/api/gasnow). Note that the fee shown is for "Rapid" and is in GWei. Clicking on the module will open etherchain the browser.
 
 
 ### Setting up the module in [polybar](https://github.com/polybar/polybar):
