@@ -9,8 +9,7 @@ try:
     if REQ.status_code == 200:
       data = REQ.json()["data"]
       rapid = round(int(data["rapid"]) * 10 ** -9)
-      fast = round(int(data["fast"]) * 10 ** -9)
-      print("{} Gwei".format(rapid, fast))
+      print("{} Gwei".format(rapid))
     else:
         print("Error: BAD HTTP STATUS CODE " + str(REQ.status_code))
 except (ValueError, IOError):
