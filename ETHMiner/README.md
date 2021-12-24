@@ -13,7 +13,7 @@ Place this config in the modules section of your polybar config and change forma
 ```
 [module/miner]
 type = custom/script
-interval = 300
+interval = 120
 format = <label>
 format-prefix = "Ξ "
 format-prefix-foreground = #00CDCF
