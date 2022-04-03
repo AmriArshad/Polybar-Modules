@@ -5,7 +5,7 @@ A simple script that checks the current hashrate of my ETH miner using the [Ethe
 ### Setting up the module in [polybar](https://github.com/polybar/polybar):
 Change ADDRESS to your ETH address.
 
-Copy min.py into your scripts folder.  
+Copy miner.py into your scripts folder.  
 This can be found at ~/.config/polybar/scripts/
 
 Place this config in the modules section of your polybar config and change formatting as desired. Note that the address should be changed to your own.
